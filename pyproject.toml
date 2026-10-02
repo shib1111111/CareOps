@@ -1,0 +1,36 @@
+[project]
+name = "careops-ai-poc"
+version = "0.1.0"
+description = "CareOps: Evidence-backed member decision support for Health Care"
+requires-python = ">=3.12"
+
+dependencies = [
+    "streamlit>=1.50",
+    "fastapi>=0.115,<1.0",
+    "uvicorn[standard]>=0.30,<1.0",
+    "pandas>=2.2,<4.0",
+    "pyarrow>=15",
+    "pydantic>=2.9,<3.0",
+    "langchain>=1.0,<2.0",
+    "langchain-google-genai>=4.0,<5.0",
+    "langchain-openai>=1.0,<2.0",
+    "langchain-groq>=1.0,<2.0",
+    "langchain-anthropic>=1.0,<2.0",
+    "python-dotenv>=1.0,<2.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/careops"]

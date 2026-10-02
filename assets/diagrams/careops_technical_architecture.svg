@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1380" role="img" aria-labelledby="title desc">
+  <title id="title">CareOps AI architecture diagram</title>
+  <desc id="desc">Data flow diagram showing the API routing requests to either the overall CareOps Supervisor Agent or domain specialists. Both paths use shared deterministic tools and converge at a traceability guardrail. The output layer highlights the 4-audience context as tabs for holistic assessment vs. targeted contexts for specialist runs.</desc>
+
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#334155" flood-opacity="0.06"/>
+    </filter>
+    <filter id="light-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#334155" flood-opacity="0.03"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+    </marker>
+    <linearGradient id="ui-btn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="emit-btn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1440" height="1380" rx="20" fill="#f8fafc"/>
+
+  <!-- ========================================== -->
+  <!-- HEADER                                     -->
+  <!-- ========================================== -->
+  <text x="720" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#334155" letter-spacing="2">CAREOPS AI ARCHITECTURE DIAGRAM</text>
+
+  <!-- ========================================== -->
+  <!-- LAYER 1: UI BUTTON TRIGGER                 -->
+  <!-- ========================================== -->
+  <rect x="580" y="80" width="280" height="70" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow)"/>
+  <rect x="610" y="95" width="220" height="40" rx="8" fill="url(#ui-btn)" filter="url(#light-shadow)"/>
+  <text x="720" y="120" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Run CareOps AI</text>
+  
+  <path d="M 720 150 V 180" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- LAYER 2: API GATEWAY / ROUTER              -->
+  <!-- ========================================== -->
+  <rect x="520" y="190" width="400" height="85" rx="14" fill="#eff6ff" stroke="#bfdbfe" filter="url(#shadow)"/>
+  <text x="720" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="900" fill="#1e40af" letter-spacing="1">API Gateway &amp; Router</text>
+  <text x="720" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#334155">Reads the requested assessment type.</text>
+  <text x="720" y="258" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Sends the request to the configured agent.</text>
+
+  <path d="M 720 275 V 305 H 320 V 335" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 720 275 V 305 H 1120 V 335" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="460" y="298" text-anchor="middle" font-family="monospace" font-size="12" fill="#64748b" font-weight="bold">"overall_evaluation"</text>
+  <text x="980" y="298" text-anchor="middle" font-family="monospace" font-size="12" fill="#64748b" font-weight="bold">Focused review request</text>
+
+  <!-- ========================================== -->
+  <!-- LAYER 3: AGENT ROUTING LAYER               -->
+  <!-- ========================================== -->
+  <!-- Overall Agent -->
+  <rect x="130" y="345" width="380" height="150" rx="14" fill="#f5f3ff" stroke="#ddd6fe" filter="url(#shadow)"/>
+  <text x="320" y="375" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#5b21b6">CareOps Supervisor Agent</text>
+  <text x="320" y="395" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#334155" font-weight="bold">(Overall Supervisor)</text>
+  
+  <rect x="230" y="410" width="180" height="24" rx="12" fill="#ede9fe"/>
+  <text x="320" y="426" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#6d28d9">LLM CALL 1: ROUTE</text>
+  
+  <text x="320" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#475569" font-weight="bold">Why this agent?</text>
+  <text x="320" y="475" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Selected for holistic, multi-domain member assessment.</text>
+
+  <!-- Specialist Agents -->
+  <rect x="930" y="345" width="380" height="150" rx="14" fill="#f5f3ff" stroke="#ddd6fe" filter="url(#shadow)"/>
+  <text x="1120" y="375" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#5b21b6">Domain Specialist Agents</text>
+  <text x="1120" y="395" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#334155" font-weight="bold">(Clinical, Care Gap, Utilization, Navigation)</text>
+  
+  <rect x="1030" y="410" width="180" height="24" rx="12" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="1120" y="426" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#64748b">NO ROUTING CALL</text>
+
+  <text x="1120" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#475569" font-weight="bold">Why this agent?</text>
+  <text x="1120" y="475" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Selected for deep, focused reasoning on a single domain.</text>
+
+  <path d="M 320 495 V 535" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1120 495 V 535" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- LAYER 4: SHARED DETERMINISTIC TOOLS        -->
+  <!-- ========================================== -->
+  <rect x="70" y="545" width="1300" height="260" rx="18" fill="#f0fdf4" stroke="#bbf7d0" filter="url(#shadow)"/>
+  <text x="720" y="575" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#047857" letter-spacing="1">SHARED DETERMINISTIC TOOL LAYER (PYTHON FUNCTIONS)</text>
+  <text x="720" y="595" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#065f46">SME-governed rules run as Python code. Findings and priority come from rules, not from the model.</text>
+
+  <!-- Clinical -->
+  <rect x="95" y="615" width="300" height="170" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#light-shadow)"/>
+  <text x="245" y="645" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">clinical_assessment</text>
+  <rect x="155" y="660" width="180" height="22" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="245" y="675" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">careops_policy.json (thresholds)</text>
+  <path d="M 245 690 V 710" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="245" y="725" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#b45309">Output:</text>
+  <text x="245" y="743" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">CLN-001 (Abnormal Lab Value)</text>
+  <text x="245" y="759" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">CLN-002 (Vital Sign Alert)</text>
+
+  <!-- Care Gaps -->
+  <rect x="410" y="615" width="300" height="170" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#light-shadow)"/>
+  <text x="560" y="645" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">care_gap_assessment</text>
+  <rect x="470" y="660" width="180" height="22" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="560" y="675" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">careops_policy.json (thresholds)</text>
+  <path d="M 560 690 V 710" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="560" y="725" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#b45309">Output:</text>
+  <text x="560" y="743" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">GAP-001 (Overdue Follow-up)</text>
+  <text x="560" y="759" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">GAP-002 (Missed Appointment)</text>
+
+  <!-- Utilization -->
+  <rect x="725" y="615" width="300" height="170" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#light-shadow)"/>
+  <text x="875" y="645" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">utilization_assessment</text>
+  <rect x="785" y="660" width="180" height="22" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="875" y="675" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">careops_policy.json (thresholds)</text>
+  <path d="M 875 690 V 710" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="875" y="725" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#b45309">Output:</text>
+  <text x="875" y="743" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">UTL-001 (High ED Utilization)</text>
+  <text x="875" y="759" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">UTL-002 (Recent Admission)</text>
+
+  <!-- Navigation / Plan -->
+  <rect x="1040" y="615" width="300" height="170" rx="12" fill="#ffffff" stroke="#e2e8f0" filter="url(#light-shadow)"/>
+  <text x="1190" y="645" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">plan_context</text>
+  <rect x="1100" y="660" width="180" height="22" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="1190" y="675" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">member_enrollment.csv</text>
+  <path d="M 1190 690 V 710" fill="none" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1190" y="725" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="800" fill="#b45309">Output:</text>
+  <text x="1190" y="743" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">Plan name, product, coverage</text>
+  <text x="1190" y="759" text-anchor="middle" font-family="monospace" font-size="12" fill="#2563eb" font-weight="bold">Context only: no Evidence ID</text>
+
+  <!-- Evidence return paths -->
+  <path d="M 320 805 V 840" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+  <path d="M 1120 805 V 840" fill="none" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+  <text x="720" y="828" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#2563eb" font-weight="bold">Stable Evidence IDs and the rule-based priority return to the agent</text>
+
+  <!-- ========================================== -->
+  <!-- LAYER 5: SYNTHESIS                         -->
+  <!-- ========================================== -->
+  <!-- Overall Synthesis -->
+  <rect x="130" y="850" width="380" height="110" rx="14" fill="#f5f3ff" stroke="#ddd6fe" filter="url(#shadow)"/>
+  <text x="320" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#5b21b6">CareOps Supervisor Agent</text>
+  <text x="320" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#334155">Synthesize Multi-Domain Findings</text>
+  
+  <rect x="230" y="915" width="180" height="24" rx="12" fill="#ede9fe"/>
+  <text x="320" y="931" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#6d28d9">LLM CALL 2: SYNTHESIZE</text>
+
+  <!-- Specialist Synthesis -->
+  <rect x="930" y="850" width="380" height="110" rx="14" fill="#f5f3ff" stroke="#ddd6fe" filter="url(#shadow)"/>
+  <text x="1120" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="900" fill="#5b21b6">Domain Specialist Agent</text>
+  <text x="1120" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#334155">Synthesize Single-Domain Findings</text>
+  
+  <rect x="1030" y="915" width="180" height="24" rx="12" fill="#ede9fe"/>
+  <text x="1120" y="931" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#6d28d9">LLM CALL 1: SYNTHESIZE</text>
+
+  <path d="M 320 960 V 985 H 720 V 1005" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1120 960 V 985 H 720 V 1005" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- LAYER 6: GUARDRAIL                         -->
+  <!-- ========================================== -->
+  <rect x="360" y="1015" width="720" height="50" rx="10" fill="#fffbeb" stroke="#fde68a" filter="url(#shadow)"/>
+  <text x="720" y="1040" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#b45309" letter-spacing="1">CONTRACT VALIDATION &amp; TRACEABILITY GUARDRAIL</text>
+  <text x="720" y="1057" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#92400e">Blocks release if the output cites unknown evidence or the wrong audiences. Priority is never model-set.</text>
+  
+  <path d="M 320 1065 V 1090" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1120 1065 V 1090" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- LAYER 7: OUTPUT & WORKFLOW HAND-OFF        -->
+  <!-- ========================================== -->
+  
+  <!-- Left Box: Holistic Output -->
+  <rect x="130" y="1100" width="380" height="135" rx="14" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="320" y="1130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#0f172a" letter-spacing="1">Output JSON</text>
+  <text x="320" y="1155" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#3b82f6">Holistic Assessment Hand-off</text>
+  
+  <!-- Audience Tabs (All 4 Active) -->
+  <g transform="translate(142.5, 1175)">
+    <rect x="0" y="0" width="70" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="35" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">Member</text>
+    
+    <rect x="75" y="0" width="85" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="117.5" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">Care Team</text>
+    
+    <rect x="165" y="0" width="85" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="207.5" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">Navigator</text>
+    
+    <rect x="255" y="0" width="100" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="305" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">Health Plan</text>
+  </g>
+  
+  <text x="320" y="1220" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#475569">Populates all 4 audience contexts</text>
+
+  <!-- Right Box: Specialist Output -->
+  <rect x="930" y="1100" width="380" height="135" rx="14" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)"/>
+  <text x="1120" y="1130" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#0f172a" letter-spacing="1">Output JSON</text>
+  <text x="1120" y="1155" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="900" fill="#3b82f6">Targeted Specialist Hand-off</text>
+  
+  <!-- Audience Tabs (Targeted Active, Others Gray) -->
+  <g transform="translate(942.5, 1175)">
+    <rect x="0" y="0" width="70" height="24" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+    <text x="35" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#94a3b8">Member</text>
+    
+    <rect x="75" y="0" width="85" height="24" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="117.5" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#1d4ed8">Care Team</text>
+    
+    <rect x="165" y="0" width="85" height="24" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+    <text x="207.5" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#94a3b8">Navigator</text>
+    
+    <rect x="255" y="0" width="100" height="24" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+    <text x="305" y="16" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#94a3b8">Health Plan</text>
+  </g>
+  
+  <text x="1120" y="1220" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#475569">Populates only the configured audiences</text>
+
+  <path d="M 320 1235 V 1260 H 720 V 1275" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 1120 1235 V 1260 H 720 V 1275" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Final Output Button -->
+  <rect x="500" y="1285" width="440" height="46" rx="8" fill="url(#emit-btn)" filter="url(#shadow)"/>
+  <text x="720" y="1313" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" letter-spacing="1">STORED PER AGENT · RETURNED VIA API</text>
+
+</svg>

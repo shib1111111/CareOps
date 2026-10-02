@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 36 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">CareOps AI</title>
+  <desc id="desc">Executive-level flow diagram demonstrating how member context is routed through AI agents, verified by a governed rules engine, and synthesized into tailored operational hand-offs.</desc>
+
+  <defs>
+    <!-- Soft, professional shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#334155" flood-opacity="0.08"/>
+    </filter>
+    <filter id="light-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#334155" flood-opacity="0.04"/>
+    </filter>
+    
+    <!-- Arrows -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+    </marker>
+
+    <!-- Gradients for premium look -->
+    <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="sme-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Slide Background -->
+  <rect width="1200" height="520" rx="0" fill="#f8fafc"/>
+
+  <!-- Main Title -->
+  <text x="600" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="900" fill="#1e293b" letter-spacing="1.5">CAREOPS AI</text>
+
+  <!-- Container for the central layout -->
+  <rect x="50" y="140" width="1100" height="340" rx="16" fill="#ffffff" stroke="#e2e8f0" filter="url(#shadow)"/>
+
+  <!-- ========================================== -->
+  <!-- 1. INPUT STAGE                             -->
+  <!-- ========================================== -->
+  <text x="140" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#94a3b8" letter-spacing="1">1. DATA INGESTION</text>
+
+  <rect x="70" y="210" width="140" height="230" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="110" y="240" width="60" height="60" rx="30" fill="#e2e8f0"/>
+  <text x="140" y="275" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" fill="#64748b">👤</text>
+  
+  <text x="140" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#334155">Member Context</text>
+  <text x="140" y="350" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Clinical History</text>
+  <text x="140" y="368" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Claims &amp; Utilization</text>
+  <text x="140" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Plan Enrollment</text>
+  <text x="140" y="404" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#64748b">User Intent</text>
+
+  <path d="M 210 325 H 250" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- 2. AI ROUTING / AGENT LAYER                -->
+  <!-- ========================================== -->
+  <text x="365" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" letter-spacing="1">2. SMART AI ROUTING</text>
+
+  <rect x="260" y="210" width="210" height="230" rx="12" fill="url(#ai-grad)" stroke="#bfdbfe" filter="url(#light-shadow)"/>
+  
+  <!-- Overall Supervisor -->
+  <rect x="275" y="230" width="180" height="65" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="365" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#1d4ed8">CareOps Supervisor Agent</text>
+  <text x="365" y="272" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">"overall_evaluation"</text>
+
+  <text x="365" y="315" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#64748b">- OR ROUTES TO -</text>
+
+  <!-- Domain Specialists -->
+  <rect x="275" y="335" width="180" height="90" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="365" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">Domain Specialists</text>
+  
+  <rect x="285" y="365" width="75" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="322.5" y="379" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Clinical Agent</text>
+  
+  <rect x="370" y="365" width="75" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="407.5" y="379" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Care Gap Agent</text>
+  
+  <rect x="285" y="392" width="75" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="322.5" y="406" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Utilization Agent</text>
+  
+  <rect x="370" y="392" width="75" height="20" rx="4" fill="#f1f5f9"/>
+  <text x="407.5" y="406" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#475569">Navigation Agent</text>
+
+  <path d="M 470 325 H 510" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- 3. DETERMINISTIC TRUST LAYER               -->
+  <!-- ========================================== -->
+  <text x="615" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#059669" letter-spacing="1">3. GOVERNED RULES</text>
+
+  <rect x="520" y="210" width="190" height="230" rx="12" fill="url(#sme-grad)" stroke="#86efac" filter="url(#light-shadow)"/>
+  
+  <text x="615" y="245" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="bold" fill="#065f46">Deterministic Engine</text>
+  <text x="615" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#047857">Evaluates data against</text>
+  <text x="615" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#047857">SME-approved policies</text>
+
+  <rect x="540" y="310" width="150" height="70" rx="6" fill="#ffffff" stroke="#bbf7d0"/>
+  <text x="615" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">Outputs Factual Evidence</text>
+  <text x="615" y="348" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">(Detects Abnormalities,</text>
+  <text x="615" y="363" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748b">Care Gaps, Util Alerts)</text>
+
+  <path d="M 710 325 H 750" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- 4. AI SYNTHESIS & SAFETY                   -->
+  <!-- ========================================== -->
+  <text x="835" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" letter-spacing="1">4. SYNTHESIS &amp; SAFETY</text>
+
+  <rect x="760" y="210" width="150" height="230" rx="12" fill="url(#ai-grad)" stroke="#bfdbfe" filter="url(#light-shadow)"/>
+  
+  <rect x="775" y="230" width="120" height="80" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+  <text x="835" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">Narrative AI</text>
+  <text x="835" y="275" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">Turns the evidence</text>
+  <text x="835" y="288" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">into a clear</text>
+  <text x="835" y="301" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#475569">assessment</text>
+
+  <path d="M 835 315 V 335" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="775" y="340" width="120" height="80" rx="8" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="835" y="365" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#b45309">Safety Guardrail</text>
+  <text x="835" y="385" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#74440c">Verifies output</text>
+  <text x="835" y="398" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#74440c">traces directly</text>
+  <text x="835" y="411" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#74440c">back to evidence</text>
+
+  <path d="M 910 325 H 950" fill="none" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ========================================== -->
+  <!-- 5. OPERATIONAL HAND-OFFS                   -->
+  <!-- ========================================== -->
+  <text x="1035" y="185" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#0f172a" letter-spacing="1">5. WORKFLOW HAND-OFF</text>
+
+  <!-- Option A: Holistic Assessment -->
+  <rect x="960" y="210" width="150" height="105" rx="10" fill="#f8fafc" stroke="#cbd5e1" filter="url(#light-shadow)"/>
+  <text x="1035" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Overall Assessment</text>
+  <text x="1035" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">All 4 audiences:</text>
+  
+  <rect x="970" y="260" width="60" height="18" rx="4" fill="#dbeafe"/>
+  <text x="1000" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1e40af" font-weight="bold">Member</text>
+  
+  <rect x="1040" y="260" width="60" height="18" rx="4" fill="#dbeafe"/>
+  <text x="1070" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1e40af" font-weight="bold">Care Team</text>
+
+  <rect x="970" y="285" width="60" height="18" rx="4" fill="#dbeafe"/>
+  <text x="1000" y="297" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1e40af" font-weight="bold">Navigator</text>
+  
+  <rect x="1040" y="285" width="60" height="18" rx="4" fill="#dbeafe"/>
+  <text x="1070" y="297" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1e40af" font-weight="bold">Health Plan</text>
+
+  <!-- Option B: Targeted Review -->
+  <rect x="960" y="335" width="150" height="105" rx="10" fill="#f8fafc" stroke="#cbd5e1" filter="url(#light-shadow)"/>
+  <text x="1035" y="360" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#0f172a">Focused Review</text>
+  <text x="1035" y="375" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#64748b">Configured audiences only:</text>
+  
+  <rect x="970" y="385" width="60" height="18" rx="4" fill="#f1f5f9"/>
+  <text x="1000" y="397" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Member</text>
+  
+  <rect x="1040" y="385" width="60" height="18" rx="4" fill="#dbeafe" stroke="#bfdbfe"/>
+  <text x="1070" y="397" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#1e40af" font-weight="bold">Care Team</text>
+
+  <rect x="970" y="410" width="60" height="18" rx="4" fill="#f1f5f9"/>
+  <text x="1000" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Navigator</text>
+  
+  <rect x="1040" y="410" width="60" height="18" rx="4" fill="#f1f5f9"/>
+  <text x="1070" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Health Plan</text>
+
+</svg>

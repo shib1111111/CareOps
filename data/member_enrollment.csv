@@ -1,0 +1,101 @@
+patient_id,member_plan_id,plan_name,product_type,csnp_enrolled,coverage_status,coverage_start,pcp_group,benefit_variant
+P0001,PLAN-001,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Standard
+P0002,PLAN-002,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Enhanced
+P0003,PLAN-003,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Chronic
+P0004,PLAN-004,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-04,Standard
+P0005,PLAN-005,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Enhanced
+P0006,PLAN-006,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Chronic
+P0007,PLAN-007,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Standard
+P0008,PLAN-008,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-08,Enhanced
+P0009,PLAN-009,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-01,Chronic
+P0010,PLAN-010,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Standard
+P0011,PLAN-011,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Enhanced
+P0012,PLAN-012,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Chronic
+P0013,PLAN-001,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-05,Standard
+P0014,PLAN-002,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-06,Enhanced
+P0015,PLAN-003,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Chronic
+P0016,PLAN-004,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Standard
+P0017,PLAN-005,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Enhanced
+P0018,PLAN-006,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-02,Chronic
+P0019,PLAN-007,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Standard
+P0020,PLAN-008,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Enhanced
+P0021,PLAN-009,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Chronic
+P0022,PLAN-010,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Standard
+P0023,PLAN-011,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-07,Enhanced
+P0024,PLAN-012,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-08,Chronic
+P0025,PLAN-001,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Standard
+P0026,PLAN-002,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Enhanced
+P0027,PLAN-003,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Chronic
+P0028,PLAN-004,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-04,Standard
+P0029,PLAN-005,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-05,Enhanced
+P0030,PLAN-006,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Chronic
+P0031,PLAN-007,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Standard
+P0032,PLAN-008,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Enhanced
+P0033,PLAN-009,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-01,Chronic
+P0034,PLAN-010,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-02,Standard
+P0035,PLAN-011,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Enhanced
+P0036,PLAN-012,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Chronic
+P0037,PLAN-001,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Standard
+P0038,PLAN-002,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-06,Enhanced
+P0039,PLAN-003,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-07,Chronic
+P0040,PLAN-004,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Standard
+P0041,PLAN-005,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Enhanced
+P0042,PLAN-006,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Chronic
+P0043,PLAN-007,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Standard
+P0044,PLAN-008,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-04,Enhanced
+P0045,PLAN-009,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Chronic
+P0046,PLAN-010,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Standard
+P0047,PLAN-011,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Enhanced
+P0048,PLAN-012,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-08,Chronic
+P0049,PLAN-001,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-01,Standard
+P0050,PLAN-002,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Enhanced
+P0051,PLAN-003,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Chronic
+P0052,PLAN-004,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Standard
+P0053,PLAN-005,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-05,Enhanced
+P0054,PLAN-006,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-06,Chronic
+P0055,PLAN-007,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Standard
+P0056,PLAN-008,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Enhanced
+P0057,PLAN-009,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Chronic
+P0058,PLAN-010,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-02,Standard
+P0059,PLAN-011,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Enhanced
+P0060,PLAN-012,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Chronic
+P0061,PLAN-001,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Standard
+P0062,PLAN-002,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Enhanced
+P0063,PLAN-003,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-07,Chronic
+P0064,PLAN-004,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-08,Standard
+P0065,PLAN-005,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Enhanced
+P0066,PLAN-006,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Chronic
+P0067,PLAN-007,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Standard
+P0068,PLAN-008,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-04,Enhanced
+P0069,PLAN-009,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-05,Chronic
+P0070,PLAN-010,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Standard
+P0071,PLAN-011,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Enhanced
+P0072,PLAN-012,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Chronic
+P0073,PLAN-001,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-01,Standard
+P0074,PLAN-002,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-02,Enhanced
+P0075,PLAN-003,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Chronic
+P0076,PLAN-004,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Standard
+P0077,PLAN-005,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Enhanced
+P0078,PLAN-006,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-06,Chronic
+P0079,PLAN-007,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-07,Standard
+P0080,PLAN-008,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Enhanced
+P0081,PLAN-009,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Chronic
+P0082,PLAN-010,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Standard
+P0083,PLAN-011,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Enhanced
+P0084,PLAN-012,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-04,Chronic
+P0085,PLAN-001,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-05,Standard
+P0086,PLAN-002,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-06,Enhanced
+P0087,PLAN-003,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Chronic
+P0088,PLAN-004,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-08,Standard
+P0089,PLAN-005,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-01,Enhanced
+P0090,PLAN-006,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-02,Chronic
+P0091,PLAN-007,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-03,Standard
+P0092,PLAN-008,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Enhanced
+P0093,PLAN-009,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-05,Chronic
+P0094,PLAN-010,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-06,Standard
+P0095,PLAN-011,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-07,Enhanced
+P0096,PLAN-012,MA-PPO Core,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-08,Chronic
+P0097,PLAN-001,MA-HMO Value,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-01,Standard
+P0098,PLAN-002,C-SNP Diabetes Plus,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-02,Enhanced
+P0099,PLAN-003,C-SNP CardioCare,Medicare Advantage,Yes,Active,2024-01-01,PCP-GROUP-03,Chronic
+P0100,PLAN-004,MA-HMO ChronicCare,Medicare Advantage,No,Active,2024-01-01,PCP-GROUP-04,Standard

@@ -1,0 +1,241 @@
+{
+  "revision": 1,
+  "risk_tiers": [
+    {"min_findings": 0, "tier": "Low"},
+    {"min_findings": 1, "tier": "Medium"},
+    {"min_findings": 2, "tier": "High"},
+    {"min_findings": 3, "tier": "Critical"}
+  ],
+  "threshold_policies": {
+    "labs": {
+      "HbA1c": {"direction": "high", "cutoff": 8.0, "note": "Poor glycemic control", "unit": "%", "evidence_id": "CLN-001"},
+      "BNP": {"direction": "high", "cutoff": 400.0, "note": "Elevated BNP", "unit": "pg/mL", "evidence_id": "CLN-001"},
+      "FEV1%": {"direction": "low", "cutoff": 50.0, "note": "Severe airflow limitation", "unit": "%", "evidence_id": "CLN-001"},
+      "BP Systolic": {"direction": "high", "cutoff": 150.0, "note": "Elevated systolic blood pressure", "unit": "mmHg", "evidence_id": "CLN-001"},
+      "TSH": {"direction": "high", "cutoff": 4.5, "note": "Elevated TSH", "unit": "mIU/L", "evidence_id": "CLN-001"},
+      "Pain Score": {"direction": "high", "cutoff": 7.0, "note": "Severe pain", "unit": "/10", "evidence_id": "CLN-001"},
+      "PHQ-9 Score": {"direction": "high", "cutoff": 15.0, "note": "Moderately-severe depressive symptoms", "unit": "/27", "evidence_id": "CLN-001"},
+      "Peak Flow": {"direction": "low", "cutoff": 250.0, "note": "Reduced peak flow", "unit": "L/min", "evidence_id": "CLN-001"},
+      "Hemoglobin": {"direction": "low", "cutoff": 10.0, "note": "Low hemoglobin", "unit": "g/dL", "evidence_id": "CLN-001"},
+      "eGFR": {"direction": "low", "cutoff": 45.0, "note": "Reduced kidney function", "unit": "mL/min/1.73m²", "evidence_id": "CLN-001"}
+    },
+    "vitals": {
+      "evidence_id": "CLN-002",
+      "checks": {
+        "systolic_bp": {"field": "vitals_bp_systolic", "label": "Systolic BP", "operator": "gt", "cutoff": 140, "unit": "mmHg"},
+        "diastolic_bp": {"field": "vitals_bp_diastolic", "label": "Diastolic BP", "operator": "gt", "cutoff": 90, "unit": "mmHg"},
+        "heart_rate": {"field": "vitals_heart_rate", "label": "Heart rate", "operator": "outside", "cutoff": [60, 100], "unit": "bpm"},
+        "spo2": {"field": "vitals_spo2", "label": "SpO2", "operator": "lt", "cutoff": 92, "unit": "%"}
+      }
+    },
+    "care_gaps": {
+      "overdue_days": 180,
+      "overdue_evidence_id": "GAP-001",
+      "missed_evidence_id": "GAP-002"
+    },
+    "utilization": {
+      "ed_window_days": 90,
+      "inpatient_window_days": 180,
+      "ed_min_visits": 2,
+      "inpatient_min_admissions": 1,
+      "ed_evidence_id": "UTL-001",
+      "inpatient_evidence_id": "UTL-002",
+      "ed_unit": "visits / 90d",
+      "inpatient_unit": "admissions / 180d"
+    }
+  },
+  "evidence_catalog": {
+    "CLN-001": {
+      "domain": "clinical",
+      "name": "Abnormal clinical measurement",
+      "description": "A clinical measurement is outside its configured threshold.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    },
+    "CLN-002": {
+      "domain": "clinical",
+      "name": "Abnormal vital sign",
+      "description": "One or more vital signs are outside their configured limits.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    },
+    "GAP-001": {
+      "domain": "care_gap",
+      "name": "Overdue follow-up",
+      "description": "The configured continuity interval has been exceeded.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    },
+    "GAP-002": {
+      "domain": "care_gap",
+      "name": "Missed appointment",
+      "description": "A recent appointment was recorded as missed.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    },
+    "UTL-001": {
+      "domain": "utilization",
+      "name": "High emergency utilization",
+      "description": "Recent emergency-department utilization met the configured threshold.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    },
+    "UTL-002": {
+      "domain": "utilization",
+      "name": "Recent inpatient utilization",
+      "description": "Recent inpatient utilization met the configured threshold.",
+      "lifecycle": "Active",
+      "priority_relevant": true
+    }
+  },
+  "decision_patterns": {
+    "clinical_continuity": {
+      "name": "Clinical concern with continuity gap",
+      "required_all": ["GAP-001"],
+      "required_any": ["CLN-001", "CLN-002"],
+      "also_any": [],
+      "diagnoses_any": [],
+      "implication": "Clinical concern is paired with a meaningful continuity gap.",
+      "pathway": "Care-team follow-up",
+      "workflows": ["clinical_followup", "care_gap_outreach"],
+      "recommended_actions": [
+        {"owner": "Care Team", "action": "Review the active clinical findings and arrange appropriate follow-up."},
+        {"owner": "Care Navigator", "action": "Support appointment access when a continuity barrier is identified."}
+      ]
+    },
+    "clinical_utilization": {
+      "name": "Clinical concern with utilization signal",
+      "required_all": [],
+      "required_any": ["CLN-001", "CLN-002"],
+      "also_any": ["UTL-001", "UTL-002"],
+      "diagnoses_any": [],
+      "implication": "Clinical concern is accompanied by recent utilization activity.",
+      "pathway": "Clinical and utilization review",
+      "workflows": ["clinical_followup", "utilization_review"],
+      "recommended_actions": [
+        {"owner": "Care Team", "action": "Review current clinical status alongside recent utilization."},
+        {"owner": "Health Plan", "action": "Review the member for applicable care-management workflow."}
+      ]
+    },
+    "chronic_navigation": {
+      "name": "Chronic-condition navigation context",
+      "required_all": [],
+      "required_any": [],
+      "also_any": [],
+      "diagnoses_any": ["Type 2 Diabetes", "Heart Failure", "COPD", "Asthma", "Depression"],
+      "implication": "A configured chronic-condition context is present and may warrant navigation review.",
+      "pathway": "Navigation review",
+      "workflows": ["navigation_review"],
+      "recommended_actions": [
+        {"owner": "Care Navigator", "action": "Review the navigation pathway and verify applicable member context."}
+      ]
+    }
+  },
+  "tools": {
+    "clinical_assessment": {
+      "name": "Clinical review capability",
+      "domain": "clinical",
+      "purpose": "Evaluate configured clinical measurements and return decision-relevant findings.",
+      "execution": "Deterministic"
+    },
+    "care_gap_assessment": {
+      "name": "Care gap review capability",
+      "domain": "care_gap",
+      "purpose": "Evaluate follow-up recency and appointment continuity.",
+      "execution": "Deterministic"
+    },
+    "utilization_assessment": {
+      "name": "Utilization review capability",
+      "domain": "utilization",
+      "purpose": "Evaluate recent emergency and inpatient activity against configured windows.",
+      "execution": "Deterministic"
+    },
+    "plan_context": {
+      "name": "Plan context capability",
+      "domain": "plan",
+      "purpose": "Provide member enrollment context for assessments that require plan context.",
+      "execution": "Deterministic"
+    }
+  },
+  "agents": {
+    "careops_supervisor": {
+      "name": "CareOps Supervisor",
+      "role": "Supervisor",
+      "purpose": "Route an overall member assessment through the minimum useful deterministic capabilities and coordinate final synthesis."
+    },
+    "clinical_specialist": {
+      "name": "Clinical Review Agent",
+      "role": "Specialist",
+      "purpose": "Produce a focused clinical assessment."
+    },
+    "care_gap_specialist": {
+      "name": "Care Gap Review Agent",
+      "role": "Specialist",
+      "purpose": "Produce a focused continuity and follow-up assessment."
+    },
+    "utilization_specialist": {
+      "name": "Utilization Review Agent",
+      "role": "Specialist",
+      "purpose": "Produce a focused recent-utilization assessment."
+    },
+    "navigation_specialist": {
+      "name": "Navigation Review Agent",
+      "role": "Specialist",
+      "purpose": "Produce a focused navigation assessment using the evidence and policy required for navigation review."
+    }
+  },
+  "scopes": {
+    "overall": {
+      "name": "Overall Member Assessment",
+      "short_name": "Overall",
+      "mode": "overall",
+      "agent": "careops_supervisor",
+      "tools": ["clinical_assessment", "care_gap_assessment", "utilization_assessment", "plan_context"],
+      "handoffs": ["member", "care_team", "navigator", "health_plan"],
+      "description": "A cross-domain member assessment coordinated by the CareOps Supervisor."
+    },
+    "clinical": {
+      "name": "Clinical Review",
+      "short_name": "Clinical",
+      "mode": "specialist",
+      "agent": "clinical_specialist",
+      "tools": ["clinical_assessment"],
+      "handoffs": ["member", "care_team"],
+      "description": "A focused review of active clinical findings."
+    },
+    "care_gap": {
+      "name": "Care Gap Review",
+      "short_name": "Care gap",
+      "mode": "specialist",
+      "agent": "care_gap_specialist",
+      "tools": ["care_gap_assessment"],
+      "handoffs": ["member", "care_team"],
+      "description": "A focused review of continuity and follow-up signals."
+    },
+    "utilization": {
+      "name": "Utilization Review",
+      "short_name": "Utilization",
+      "mode": "specialist",
+      "agent": "utilization_specialist",
+      "tools": ["utilization_assessment"],
+      "handoffs": ["care_team", "health_plan"],
+      "description": "A focused review of recent emergency and inpatient utilization."
+    },
+    "navigation": {
+      "name": "Navigation Review",
+      "short_name": "Navigation",
+      "mode": "specialist",
+      "agent": "navigation_specialist",
+      "tools": ["clinical_assessment", "care_gap_assessment", "plan_context"],
+      "handoffs": ["navigator", "health_plan"],
+      "description": "A focused navigation review that uses its required clinical, continuity and plan context."
+    }
+  },
+  "audiences": {
+    "member": "Plain-language explanation of what was found and what happens next.",
+    "care_team": "Clinical and continuity context for operational review.",
+    "navigator": "Navigation context, verification considerations and pathway relevance.",
+    "health_plan": "Concise workflow context for plan operations."
+  },
+  "tool_dependencies": {}
+}

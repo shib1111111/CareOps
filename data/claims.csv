@@ -1,0 +1,298 @@
+claim_id,patient_id,service_date,service_type,place_of_service,diagnosis_group,claim_status,allowed_amount,paid_amount
+CLM-0001-01,P0001,2024-01-01,PCP Visit,Outpatient,Type 2 Diabetes,Paid,180,140
+CLM-0001-02,P0001,2024-02-05,Emergency Department,Hospital,Type 2 Diabetes,Paid,221,177
+CLM-0002-01,P0002,2024-01-02,Specialist Visit,Outpatient,Heart Failure,Paid,253,201
+CLM-0002-02,P0002,2024-02-06,Emergency Department,Hospital,Heart Failure,Paid,294,238
+CLM-0002-03,P0002,2024-03-12,Outpatient Lab,Outpatient,Heart Failure,Paid,335,275
+CLM-0003-01,P0003,2024-01-03,Emergency Department,Hospital,Type 2 Diabetes,Paid,326,262
+CLM-0003-02,P0003,2024-02-07,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,367,299
+CLM-0003-03,P0003,2024-03-13,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,408,336
+CLM-0003-04,P0003,2024-04-17,Urgent Care,Outpatient,Type 2 Diabetes,Paid,449,373
+CLM-0004-01,P0004,2024-01-04,Outpatient Lab,Outpatient,COPD,Paid,399,323
+CLM-0004-02,P0004,2024-02-08,Inpatient Admission,Hospital,COPD,Paid,440,360
+CLM-0005-01,P0005,2024-01-05,Inpatient Admission,Hospital,Hypertension,Paid,472,384
+CLM-0005-02,P0005,2024-02-09,Urgent Care,Outpatient,Hypertension,Paid,513,421
+CLM-0005-03,P0005,2024-03-15,Care Management,Outpatient,Hypertension,Paid,554,458
+CLM-0006-01,P0006,2024-01-06,Urgent Care,Outpatient,Chronic Kidney Disease,Paid,545,445
+CLM-0006-02,P0006,2024-02-10,Care Management,Outpatient,Chronic Kidney Disease,Paid,586,482
+CLM-0006-03,P0006,2024-03-16,PCP Visit,Outpatient,Chronic Kidney Disease,Paid,627,519
+CLM-0006-04,P0006,2024-04-20,Specialist Visit,Outpatient,Chronic Kidney Disease,Paid,668,556
+CLM-0007-01,P0007,2024-01-07,Care Management,Outpatient,COPD,Paid,618,506
+CLM-0007-02,P0007,2024-02-11,PCP Visit,Outpatient,COPD,Paid,659,543
+CLM-0008-01,P0008,2024-01-08,PCP Visit,Outpatient,Heart Failure,Paid,691,567
+CLM-0008-02,P0008,2024-02-12,Specialist Visit,Outpatient,Heart Failure,Paid,732,604
+CLM-0008-03,P0008,2024-03-18,Emergency Department,Hospital,Heart Failure,Paid,773,641
+CLM-0009-01,P0009,2024-01-09,Specialist Visit,Outpatient,Hypertension,Paid,764,628
+CLM-0009-02,P0009,2024-02-13,Emergency Department,Hospital,Hypertension,Paid,805,665
+CLM-0009-03,P0009,2024-03-19,Outpatient Lab,Outpatient,Hypertension,Paid,846,702
+CLM-0009-04,P0009,2024-04-23,Inpatient Admission,Hospital,Hypertension,Paid,887,739
+CLM-0011-01,P0011,2024-01-11,Outpatient Lab,Outpatient,Osteoarthritis,Paid,910,750
+CLM-0011-02,P0011,2024-02-15,Inpatient Admission,Hospital,Osteoarthritis,Paid,951,787
+CLM-0011-03,P0011,2024-03-21,Urgent Care,Outpatient,Osteoarthritis,Paid,992,824
+CLM-0012-01,P0012,2024-01-12,Inpatient Admission,Hospital,Chronic Kidney Disease,Paid,983,811
+CLM-0012-02,P0012,2024-02-16,Urgent Care,Outpatient,Chronic Kidney Disease,Paid,1024,848
+CLM-0012-03,P0012,2024-03-22,Care Management,Outpatient,Chronic Kidney Disease,Paid,1065,885
+CLM-0012-04,P0012,2024-04-26,PCP Visit,Outpatient,Chronic Kidney Disease,Paid,1106,922
+CLM-0013-01,P0013,2024-01-13,Urgent Care,Outpatient,Asthma,Paid,1056,872
+CLM-0013-02,P0013,2024-02-17,Care Management,Outpatient,Asthma,Paid,1097,909
+CLM-0014-01,P0014,2024-01-14,Care Management,Outpatient,Heart Failure,Paid,1129,933
+CLM-0014-02,P0014,2024-02-18,PCP Visit,Outpatient,Heart Failure,Paid,1170,970
+CLM-0014-03,P0014,2024-03-24,Specialist Visit,Outpatient,Heart Failure,Paid,1211,1007
+CLM-0015-01,P0015,2024-01-15,PCP Visit,Outpatient,Osteoarthritis,Paid,1202,994
+CLM-0015-02,P0015,2024-02-19,Specialist Visit,Outpatient,Osteoarthritis,Paid,1243,1031
+CLM-0015-03,P0015,2024-03-25,Emergency Department,Hospital,Osteoarthritis,Paid,1284,1068
+CLM-0015-04,P0015,2024-04-29,Outpatient Lab,Outpatient,Osteoarthritis,Paid,1325,1105
+CLM-0016-01,P0016,2024-01-16,Specialist Visit,Outpatient,Hypertension,Paid,1275,1055
+CLM-0016-02,P0016,2024-02-20,Emergency Department,Hospital,Hypertension,Paid,1316,1092
+CLM-0017-01,P0017,2024-01-17,Emergency Department,Hospital,Heart Failure,Paid,1348,1116
+CLM-0017-02,P0017,2024-02-21,Outpatient Lab,Outpatient,Heart Failure,Paid,1389,1153
+CLM-0017-03,P0017,2024-03-27,Inpatient Admission,Hospital,Heart Failure,Paid,1430,1190
+CLM-0018-01,P0018,2024-01-18,Outpatient Lab,Outpatient,Heart Failure,Paid,1421,1177
+CLM-0018-02,P0018,2024-02-22,Emergency Department,Hospital,Heart Failure,Paid,1462,1214
+CLM-0018-03,P0018,2024-03-28,Urgent Care,Outpatient,Heart Failure,Paid,1503,1251
+CLM-0018-04,P0018,2024-05-02,Care Management,Outpatient,Heart Failure,Paid,1544,1288
+CLM-0019-01,P0019,2024-01-19,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,1494,1238
+CLM-0019-02,P0019,2024-02-23,Urgent Care,Outpatient,Type 2 Diabetes,Paid,1535,1275
+CLM-0020-01,P0020,2024-01-20,Urgent Care,Outpatient,Chronic Kidney Disease,Paid,1567,1299
+CLM-0020-02,P0020,2024-02-24,Care Management,Outpatient,Chronic Kidney Disease,Paid,1608,1336
+CLM-0020-03,P0020,2024-03-30,PCP Visit,Outpatient,Chronic Kidney Disease,Paid,1649,1373
+CLM-0021-01,P0021,2024-01-21,Care Management,Outpatient,Hypertension,Paid,1640,1360
+CLM-0021-02,P0021,2024-02-25,PCP Visit,Outpatient,Hypertension,Paid,1681,1397
+CLM-0021-03,P0021,2024-03-31,Specialist Visit,Outpatient,Hypertension,Paid,1722,1434
+CLM-0021-04,P0021,2024-05-05,Emergency Department,Hospital,Hypertension,Paid,1763,171
+CLM-0022-01,P0022,2024-01-22,PCP Visit,Outpatient,Anemia,Paid,1713,1421
+CLM-0022-02,P0022,2024-02-26,Specialist Visit,Outpatient,Anemia,Paid,1754,158
+CLM-0023-01,P0023,2024-01-23,Specialist Visit,Outpatient,Heart Failure,Paid,1786,182
+CLM-0023-02,P0023,2024-02-27,Emergency Department,Hospital,Heart Failure,Paid,1827,219
+CLM-0023-03,P0023,2024-04-02,Outpatient Lab,Outpatient,Heart Failure,Paid,1868,256
+CLM-0024-01,P0024,2024-01-24,Emergency Department,Hospital,Type 2 Diabetes,Paid,1859,243
+CLM-0024-02,P0024,2024-02-28,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,200,280
+CLM-0024-03,P0024,2024-04-03,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,241,317
+CLM-0024-04,P0024,2024-05-08,Urgent Care,Outpatient,Type 2 Diabetes,Paid,282,354
+CLM-0025-01,P0025,2024-01-25,Outpatient Lab,Outpatient,Depression,Paid,232,304
+CLM-0025-02,P0025,2024-02-29,Inpatient Admission,Hospital,Depression,Paid,273,341
+CLM-0026-01,P0026,2024-01-26,Inpatient Admission,Hospital,Chronic Kidney Disease,Paid,305,365
+CLM-0026-02,P0026,2024-03-01,Urgent Care,Outpatient,Chronic Kidney Disease,Paid,346,402
+CLM-0026-03,P0026,2024-04-05,Care Management,Outpatient,Chronic Kidney Disease,Paid,387,439
+CLM-0027-01,P0027,2024-01-27,Urgent Care,Outpatient,Osteoarthritis,Paid,378,426
+CLM-0027-02,P0027,2024-03-02,Care Management,Outpatient,Osteoarthritis,Paid,419,463
+CLM-0027-03,P0027,2024-04-06,PCP Visit,Outpatient,Osteoarthritis,Paid,460,500
+CLM-0027-04,P0027,2024-05-11,Specialist Visit,Outpatient,Osteoarthritis,Paid,501,537
+CLM-0028-01,P0028,2024-01-28,Care Management,Outpatient,Depression,Paid,451,487
+CLM-0028-02,P0028,2024-03-03,PCP Visit,Outpatient,Depression,Paid,492,524
+CLM-0029-01,P0029,2024-01-29,PCP Visit,Outpatient,Hypertension,Paid,524,548
+CLM-0029-02,P0029,2024-03-04,Specialist Visit,Outpatient,Hypertension,Paid,565,585
+CLM-0029-03,P0029,2024-04-08,Emergency Department,Hospital,Hypertension,Paid,606,622
+CLM-0030-01,P0030,2024-01-30,Specialist Visit,Outpatient,COPD,Paid,597,609
+CLM-0030-02,P0030,2024-03-05,Emergency Department,Hospital,COPD,Paid,638,646
+CLM-0030-03,P0030,2024-04-09,Inpatient Admission,Hospital,COPD,Paid,679,683
+CLM-0030-04,P0030,2024-05-14,Inpatient Admission,Hospital,COPD,Paid,720,720
+CLM-0031-01,P0031,2024-01-01,Emergency Department,Hospital,Chronic Kidney Disease,Paid,670,670
+CLM-0031-02,P0031,2024-02-05,Outpatient Lab,Outpatient,Chronic Kidney Disease,Paid,711,707
+CLM-0032-01,P0032,2024-01-02,Outpatient Lab,Outpatient,Anemia,Paid,743,731
+CLM-0032-02,P0032,2024-02-06,Inpatient Admission,Hospital,Anemia,Paid,784,768
+CLM-0032-03,P0032,2024-03-12,Urgent Care,Outpatient,Anemia,Paid,825,805
+CLM-0033-01,P0033,2024-01-03,Inpatient Admission,Hospital,Depression,Paid,816,792
+CLM-0033-02,P0033,2024-02-07,Urgent Care,Outpatient,Depression,Paid,857,829
+CLM-0033-03,P0033,2024-03-13,Care Management,Outpatient,Depression,Paid,898,866
+CLM-0033-04,P0033,2024-04-17,PCP Visit,Outpatient,Depression,Paid,939,903
+CLM-0034-01,P0034,2024-01-04,Urgent Care,Outpatient,COPD,Paid,889,853
+CLM-0034-02,P0034,2024-02-08,Care Management,Outpatient,COPD,Paid,930,890
+CLM-0035-01,P0035,2024-01-05,Care Management,Outpatient,Heart Failure,Paid,962,914
+CLM-0035-02,P0035,2024-02-09,Emergency Department,Hospital,Heart Failure,Paid,1003,951
+CLM-0035-03,P0035,2024-03-15,Specialist Visit,Outpatient,Heart Failure,Paid,1044,988
+CLM-0036-01,P0036,2024-01-06,PCP Visit,Outpatient,Type 2 Diabetes,Paid,1035,975
+CLM-0036-02,P0036,2024-02-10,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,1076,1012
+CLM-0036-03,P0036,2024-03-16,Emergency Department,Hospital,Type 2 Diabetes,Paid,1117,1049
+CLM-0036-04,P0036,2024-04-20,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,1158,1086
+CLM-0037-01,P0037,2024-01-07,Specialist Visit,Outpatient,Anemia,Paid,1108,1036
+CLM-0037-02,P0037,2024-02-11,Emergency Department,Hospital,Anemia,Paid,1149,1073
+CLM-0038-01,P0038,2024-01-08,Emergency Department,Hospital,Type 2 Diabetes,Paid,1181,1097
+CLM-0038-02,P0038,2024-02-12,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,1222,1134
+CLM-0038-03,P0038,2024-03-18,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,1263,1171
+CLM-0039-01,P0039,2024-01-09,Outpatient Lab,Outpatient,Osteoarthritis,Paid,1254,1158
+CLM-0039-02,P0039,2024-02-13,Inpatient Admission,Hospital,Osteoarthritis,Paid,1295,1195
+CLM-0039-03,P0039,2024-03-19,Urgent Care,Outpatient,Osteoarthritis,Paid,1336,1232
+CLM-0039-04,P0039,2024-04-23,Care Management,Outpatient,Osteoarthritis,Paid,1377,1269
+CLM-0040-01,P0040,2024-01-10,Inpatient Admission,Hospital,Anemia,Paid,1327,1219
+CLM-0040-02,P0040,2024-02-14,Urgent Care,Outpatient,Anemia,Paid,1368,1256
+CLM-0041-01,P0041,2024-01-11,Urgent Care,Outpatient,Hypertension,Paid,1400,1280
+CLM-0041-02,P0041,2024-02-15,Care Management,Outpatient,Hypertension,Paid,1441,1317
+CLM-0041-03,P0041,2024-03-21,PCP Visit,Outpatient,Hypertension,Paid,1482,1354
+CLM-0042-01,P0042,2024-01-12,Care Management,Outpatient,Hypothyroidism,Paid,1473,1341
+CLM-0042-02,P0042,2024-02-16,PCP Visit,Outpatient,Hypothyroidism,Paid,1514,1378
+CLM-0042-03,P0042,2024-03-22,Specialist Visit,Outpatient,Hypothyroidism,Paid,1555,1415
+CLM-0042-04,P0042,2024-04-26,Emergency Department,Hospital,Hypothyroidism,Paid,1596,152
+CLM-0043-01,P0043,2024-01-13,PCP Visit,Outpatient,Hypertension,Paid,1546,1402
+CLM-0043-02,P0043,2024-02-17,Specialist Visit,Outpatient,Hypertension,Paid,1587,1439
+CLM-0044-01,P0044,2024-01-14,Specialist Visit,Outpatient,Hypothyroidism,Paid,1619,163
+CLM-0044-02,P0044,2024-02-18,Emergency Department,Hospital,Hypothyroidism,Paid,1660,200
+CLM-0044-03,P0044,2024-03-24,Outpatient Lab,Outpatient,Hypothyroidism,Paid,1701,237
+CLM-0045-01,P0045,2024-01-15,Emergency Department,Hospital,Hypertension,Paid,1692,224
+CLM-0045-02,P0045,2024-02-19,Outpatient Lab,Outpatient,Hypertension,Paid,1733,261
+CLM-0045-03,P0045,2024-03-25,Inpatient Admission,Hospital,Hypertension,Paid,1774,298
+CLM-0045-04,P0045,2024-04-29,Urgent Care,Outpatient,Hypertension,Paid,1815,335
+CLM-0046-01,P0046,2024-01-16,Outpatient Lab,Outpatient,COPD,Paid,1765,285
+CLM-0046-02,P0046,2024-02-20,Inpatient Admission,Hospital,COPD,Paid,1806,322
+CLM-0047-01,P0047,2024-01-17,Inpatient Admission,Hospital,Hypertension,Paid,1838,346
+CLM-0047-02,P0047,2024-02-21,Urgent Care,Outpatient,Hypertension,Paid,1879,383
+CLM-0047-03,P0047,2024-03-27,Care Management,Outpatient,Hypertension,Paid,220,420
+CLM-0048-01,P0048,2024-01-18,Urgent Care,Outpatient,Anemia,Paid,211,407
+CLM-0048-02,P0048,2024-02-22,Care Management,Outpatient,Anemia,Paid,252,444
+CLM-0048-03,P0048,2024-03-28,PCP Visit,Outpatient,Anemia,Paid,293,481
+CLM-0048-04,P0048,2024-05-02,Specialist Visit,Outpatient,Anemia,Paid,334,518
+CLM-0049-01,P0049,2024-01-19,Care Management,Outpatient,Hypothyroidism,Paid,284,468
+CLM-0049-02,P0049,2024-02-23,PCP Visit,Outpatient,Hypothyroidism,Paid,325,505
+CLM-0050-01,P0050,2024-01-20,PCP Visit,Outpatient,Hypertension,Paid,357,529
+CLM-0050-02,P0050,2024-02-24,Specialist Visit,Outpatient,Hypertension,Paid,398,566
+CLM-0050-03,P0050,2024-03-30,Emergency Department,Hospital,Hypertension,Paid,439,603
+CLM-0051-01,P0051,2024-01-21,Specialist Visit,Outpatient,Heart Failure,Paid,430,590
+CLM-0051-02,P0051,2024-02-25,Emergency Department,Hospital,Heart Failure,Paid,471,627
+CLM-0051-03,P0051,2024-03-31,Outpatient Lab,Outpatient,Heart Failure,Paid,512,664
+CLM-0051-04,P0051,2024-05-05,Inpatient Admission,Hospital,Heart Failure,Paid,553,701
+CLM-0052-01,P0052,2024-01-22,Emergency Department,Hospital,Asthma,Paid,503,651
+CLM-0052-02,P0052,2024-02-26,Emergency Department,Hospital,Asthma,Paid,544,688
+CLM-0053-01,P0053,2024-01-23,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,576,712
+CLM-0053-02,P0053,2024-02-27,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,617,749
+CLM-0053-03,P0053,2024-04-02,Urgent Care,Outpatient,Type 2 Diabetes,Paid,658,786
+CLM-0054-01,P0054,2024-01-24,Inpatient Admission,Hospital,Depression,Paid,649,773
+CLM-0054-02,P0054,2024-02-28,Urgent Care,Outpatient,Depression,Paid,690,810
+CLM-0054-03,P0054,2024-04-03,Care Management,Outpatient,Depression,Paid,731,847
+CLM-0054-04,P0054,2024-05-08,PCP Visit,Outpatient,Depression,Paid,772,884
+CLM-0055-01,P0055,2024-01-25,Urgent Care,Outpatient,COPD,Paid,722,834
+CLM-0055-02,P0055,2024-02-29,Care Management,Outpatient,COPD,Paid,763,871
+CLM-0056-01,P0056,2024-01-26,Care Management,Outpatient,Type 2 Diabetes,Paid,795,895
+CLM-0056-02,P0056,2024-03-01,PCP Visit,Outpatient,Type 2 Diabetes,Paid,836,932
+CLM-0056-03,P0056,2024-04-05,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,877,969
+CLM-0057-01,P0057,2024-01-27,PCP Visit,Outpatient,Depression,Paid,868,956
+CLM-0057-02,P0057,2024-03-02,Specialist Visit,Outpatient,Depression,Paid,909,993
+CLM-0057-03,P0057,2024-04-06,Emergency Department,Hospital,Depression,Paid,950,1030
+CLM-0057-04,P0057,2024-05-11,Outpatient Lab,Outpatient,Depression,Paid,991,1067
+CLM-0058-01,P0058,2024-01-28,Specialist Visit,Outpatient,Heart Failure,Paid,941,1017
+CLM-0058-02,P0058,2024-03-03,Emergency Department,Hospital,Heart Failure,Paid,982,1054
+CLM-0059-01,P0059,2024-01-29,Emergency Department,Hospital,Asthma,Paid,1014,1078
+CLM-0059-02,P0059,2024-03-04,Outpatient Lab,Outpatient,Asthma,Paid,1055,1115
+CLM-0059-03,P0059,2024-04-08,Inpatient Admission,Hospital,Asthma,Paid,1096,1152
+CLM-0060-01,P0060,2024-01-30,Outpatient Lab,Outpatient,Hypertension,Paid,1087,1139
+CLM-0060-02,P0060,2024-03-05,Inpatient Admission,Hospital,Hypertension,Paid,1128,1176
+CLM-0060-03,P0060,2024-04-09,Urgent Care,Outpatient,Hypertension,Paid,1169,1213
+CLM-0060-04,P0060,2024-05-14,Care Management,Outpatient,Hypertension,Paid,1210,1250
+CLM-0061-01,P0061,2024-01-01,Inpatient Admission,Hospital,Hypothyroidism,Paid,1160,1200
+CLM-0061-02,P0061,2024-02-05,Urgent Care,Outpatient,Hypothyroidism,Paid,1201,1237
+CLM-0062-01,P0062,2024-01-02,Urgent Care,Outpatient,Asthma,Paid,1233,1261
+CLM-0062-02,P0062,2024-02-06,Care Management,Outpatient,Asthma,Paid,1274,1298
+CLM-0062-03,P0062,2024-03-12,PCP Visit,Outpatient,Asthma,Paid,1315,1335
+CLM-0063-01,P0063,2024-01-03,Care Management,Outpatient,Hypertension,Paid,1306,1322
+CLM-0063-02,P0063,2024-02-07,PCP Visit,Outpatient,Hypertension,Paid,1347,1359
+CLM-0063-03,P0063,2024-03-13,Specialist Visit,Outpatient,Hypertension,Paid,1388,1396
+CLM-0063-04,P0063,2024-04-17,Emergency Department,Hospital,Hypertension,Paid,1429,1433
+CLM-0064-01,P0064,2024-01-04,PCP Visit,Outpatient,Osteoarthritis,Paid,1379,1383
+CLM-0064-02,P0064,2024-02-08,Specialist Visit,Outpatient,Osteoarthritis,Paid,1420,1420
+CLM-0065-01,P0065,2024-01-05,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,1452,144
+CLM-0065-02,P0065,2024-02-09,Emergency Department,Hospital,Type 2 Diabetes,Paid,1493,181
+CLM-0065-03,P0065,2024-03-15,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,1534,218
+CLM-0066-01,P0066,2024-01-06,Emergency Department,Hospital,Type 2 Diabetes,Paid,1525,205
+CLM-0066-02,P0066,2024-02-10,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,1566,242
+CLM-0066-03,P0066,2024-03-16,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,1607,279
+CLM-0066-04,P0066,2024-04-20,Urgent Care,Outpatient,Type 2 Diabetes,Paid,1648,316
+CLM-0067-01,P0067,2024-01-07,Outpatient Lab,Outpatient,Hypothyroidism,Paid,1598,266
+CLM-0067-02,P0067,2024-02-11,Inpatient Admission,Hospital,Hypothyroidism,Paid,1639,303
+CLM-0068-01,P0068,2024-01-08,Inpatient Admission,Hospital,COPD,Paid,1671,327
+CLM-0068-02,P0068,2024-02-12,Urgent Care,Outpatient,COPD,Paid,1712,364
+CLM-0068-03,P0068,2024-03-18,Care Management,Outpatient,COPD,Paid,1753,401
+CLM-0069-01,P0069,2024-01-09,Urgent Care,Outpatient,Type 2 Diabetes,Paid,1744,388
+CLM-0069-02,P0069,2024-02-13,Emergency Department,Hospital,Type 2 Diabetes,Paid,1785,425
+CLM-0069-03,P0069,2024-03-19,PCP Visit,Outpatient,Type 2 Diabetes,Paid,1826,462
+CLM-0069-04,P0069,2024-04-23,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,1867,499
+CLM-0070-01,P0070,2024-01-10,Care Management,Outpatient,Osteoarthritis,Paid,1817,449
+CLM-0070-02,P0070,2024-02-14,PCP Visit,Outpatient,Osteoarthritis,Paid,1858,486
+CLM-0071-01,P0071,2024-01-11,PCP Visit,Outpatient,Hypothyroidism,Paid,190,510
+CLM-0071-02,P0071,2024-02-15,Specialist Visit,Outpatient,Hypothyroidism,Paid,231,547
+CLM-0071-03,P0071,2024-03-21,Emergency Department,Hospital,Hypothyroidism,Paid,272,584
+CLM-0072-01,P0072,2024-01-12,Specialist Visit,Outpatient,Depression,Paid,263,571
+CLM-0072-02,P0072,2024-02-16,Emergency Department,Hospital,Depression,Paid,304,608
+CLM-0072-03,P0072,2024-03-22,Outpatient Lab,Outpatient,Depression,Paid,345,645
+CLM-0072-04,P0072,2024-04-26,Inpatient Admission,Hospital,Depression,Paid,386,682
+CLM-0073-01,P0073,2024-01-13,Emergency Department,Hospital,Hypertension,Paid,336,632
+CLM-0073-02,P0073,2024-02-17,Outpatient Lab,Outpatient,Hypertension,Paid,377,669
+CLM-0074-01,P0074,2024-01-14,Outpatient Lab,Outpatient,COPD,Paid,409,693
+CLM-0074-02,P0074,2024-02-18,Inpatient Admission,Hospital,COPD,Paid,450,730
+CLM-0074-03,P0074,2024-03-24,Urgent Care,Outpatient,COPD,Paid,491,767
+CLM-0075-01,P0075,2024-01-15,Inpatient Admission,Hospital,Asthma,Paid,482,754
+CLM-0075-02,P0075,2024-02-19,Urgent Care,Outpatient,Asthma,Paid,523,791
+CLM-0075-03,P0075,2024-03-25,Care Management,Outpatient,Asthma,Paid,564,828
+CLM-0075-04,P0075,2024-04-29,PCP Visit,Outpatient,Asthma,Paid,605,865
+CLM-0076-01,P0076,2024-01-16,Urgent Care,Outpatient,Depression,Paid,555,815
+CLM-0076-02,P0076,2024-02-20,Care Management,Outpatient,Depression,Paid,596,852
+CLM-0077-01,P0077,2024-01-17,Care Management,Outpatient,Type 2 Diabetes,Paid,628,876
+CLM-0077-02,P0077,2024-02-21,PCP Visit,Outpatient,Type 2 Diabetes,Paid,669,913
+CLM-0077-03,P0077,2024-03-27,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,710,950
+CLM-0078-01,P0078,2024-01-18,PCP Visit,Outpatient,Type 2 Diabetes,Paid,701,937
+CLM-0078-02,P0078,2024-02-22,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,742,974
+CLM-0078-03,P0078,2024-03-28,Emergency Department,Hospital,Type 2 Diabetes,Paid,783,1011
+CLM-0078-04,P0078,2024-05-02,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,824,1048
+CLM-0079-01,P0079,2024-01-19,Specialist Visit,Outpatient,Heart Failure,Paid,774,998
+CLM-0079-02,P0079,2024-02-23,Emergency Department,Hospital,Heart Failure,Paid,815,1035
+CLM-0080-01,P0080,2024-01-20,Emergency Department,Hospital,COPD,Paid,847,1059
+CLM-0080-02,P0080,2024-02-24,Outpatient Lab,Outpatient,COPD,Paid,888,1096
+CLM-0080-03,P0080,2024-03-30,Inpatient Admission,Hospital,COPD,Paid,929,1133
+CLM-0081-01,P0081,2024-01-21,Outpatient Lab,Outpatient,Hypothyroidism,Paid,920,1120
+CLM-0081-02,P0081,2024-02-25,Inpatient Admission,Hospital,Hypothyroidism,Paid,961,1157
+CLM-0081-03,P0081,2024-03-31,Urgent Care,Outpatient,Hypothyroidism,Paid,1002,1194
+CLM-0081-04,P0081,2024-05-05,Care Management,Outpatient,Hypothyroidism,Paid,1043,1231
+CLM-0082-01,P0082,2024-01-22,Inpatient Admission,Hospital,Hypothyroidism,Paid,993,1181
+CLM-0082-02,P0082,2024-02-26,Urgent Care,Outpatient,Hypothyroidism,Paid,1034,1218
+CLM-0083-01,P0083,2024-01-23,Urgent Care,Outpatient,Anemia,Paid,1066,1242
+CLM-0083-02,P0083,2024-02-27,Care Management,Outpatient,Anemia,Paid,1107,1279
+CLM-0083-03,P0083,2024-04-02,PCP Visit,Outpatient,Anemia,Paid,1148,1316
+CLM-0084-01,P0084,2024-01-24,Care Management,Outpatient,COPD,Paid,1139,1303
+CLM-0084-02,P0084,2024-02-28,PCP Visit,Outpatient,COPD,Paid,1180,1340
+CLM-0084-03,P0084,2024-04-03,Specialist Visit,Outpatient,COPD,Paid,1221,1377
+CLM-0084-04,P0084,2024-05-08,Emergency Department,Hospital,COPD,Paid,1262,1414
+CLM-0085-01,P0085,2024-01-25,PCP Visit,Outpatient,Heart Failure,Paid,1212,1364
+CLM-0085-02,P0085,2024-02-29,Specialist Visit,Outpatient,Heart Failure,Paid,1253,1401
+CLM-0086-01,P0086,2024-01-26,Specialist Visit,Outpatient,Asthma,Paid,1285,1425
+CLM-0086-02,P0086,2024-03-01,Emergency Department,Hospital,Asthma,Paid,1326,162
+CLM-0086-03,P0086,2024-04-05,Outpatient Lab,Outpatient,Asthma,Paid,1367,199
+CLM-0087-01,P0087,2024-01-27,Emergency Department,Hospital,Hypothyroidism,Paid,1358,186
+CLM-0087-02,P0087,2024-03-02,Outpatient Lab,Outpatient,Hypothyroidism,Paid,1399,223
+CLM-0087-03,P0087,2024-04-06,Inpatient Admission,Hospital,Hypothyroidism,Paid,1440,260
+CLM-0087-04,P0087,2024-05-11,Urgent Care,Outpatient,Hypothyroidism,Paid,1481,297
+CLM-0088-01,P0088,2024-01-28,Outpatient Lab,Outpatient,Hypertension,Paid,1431,247
+CLM-0088-02,P0088,2024-03-03,Inpatient Admission,Hospital,Hypertension,Paid,1472,284
+CLM-0089-01,P0089,2024-01-29,Inpatient Admission,Hospital,COPD,Paid,1504,308
+CLM-0089-02,P0089,2024-03-04,Urgent Care,Outpatient,COPD,Paid,1545,345
+CLM-0089-03,P0089,2024-04-08,Care Management,Outpatient,COPD,Paid,1586,382
+CLM-0090-01,P0090,2024-01-30,Urgent Care,Outpatient,Hypertension,Paid,1577,369
+CLM-0090-02,P0090,2024-03-05,Care Management,Outpatient,Hypertension,Paid,1618,406
+CLM-0090-03,P0090,2024-04-09,PCP Visit,Outpatient,Hypertension,Paid,1659,443
+CLM-0090-04,P0090,2024-05-14,Specialist Visit,Outpatient,Hypertension,Paid,1700,480
+CLM-0091-01,P0091,2024-01-01,Care Management,Outpatient,Type 2 Diabetes,Paid,1650,430
+CLM-0091-02,P0091,2024-02-05,PCP Visit,Outpatient,Type 2 Diabetes,Paid,1691,467
+CLM-0092-01,P0092,2024-01-02,PCP Visit,Outpatient,Hypertension,Paid,1723,491
+CLM-0092-02,P0092,2024-02-06,Specialist Visit,Outpatient,Hypertension,Paid,1764,528
+CLM-0092-03,P0092,2024-03-12,Emergency Department,Hospital,Hypertension,Paid,1805,565
+CLM-0093-01,P0093,2024-01-03,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,1796,552
+CLM-0093-02,P0093,2024-02-07,Emergency Department,Hospital,Type 2 Diabetes,Paid,1837,589
+CLM-0093-03,P0093,2024-03-13,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,1878,626
+CLM-0093-04,P0093,2024-04-17,Inpatient Admission,Hospital,Type 2 Diabetes,Paid,219,663
+CLM-0094-01,P0094,2024-01-04,Emergency Department,Hospital,Osteoarthritis,Paid,1869,613
+CLM-0094-02,P0094,2024-02-08,Outpatient Lab,Outpatient,Osteoarthritis,Paid,210,650
+CLM-0095-01,P0095,2024-01-05,Outpatient Lab,Outpatient,Hypertension,Paid,242,674
+CLM-0095-02,P0095,2024-02-09,Inpatient Admission,Hospital,Hypertension,Paid,283,711
+CLM-0095-03,P0095,2024-03-15,Urgent Care,Outpatient,Hypertension,Paid,324,748
+CLM-0096-01,P0096,2024-01-06,Inpatient Admission,Hospital,COPD,Paid,315,735
+CLM-0096-02,P0096,2024-02-10,Urgent Care,Outpatient,COPD,Paid,356,772
+CLM-0096-03,P0096,2024-03-16,Care Management,Outpatient,COPD,Paid,397,809
+CLM-0096-04,P0096,2024-04-20,PCP Visit,Outpatient,COPD,Paid,438,846
+CLM-0097-01,P0097,2024-01-07,Urgent Care,Outpatient,Hypertension,Paid,388,796
+CLM-0097-02,P0097,2024-02-11,Care Management,Outpatient,Hypertension,Paid,429,833
+CLM-0098-01,P0098,2024-01-08,Care Management,Outpatient,Heart Failure,Paid,461,857
+CLM-0098-02,P0098,2024-02-12,PCP Visit,Outpatient,Heart Failure,Paid,502,894
+CLM-0098-03,P0098,2024-03-18,Specialist Visit,Outpatient,Heart Failure,Paid,543,931
+CLM-0099-01,P0099,2024-01-09,PCP Visit,Outpatient,Type 2 Diabetes,Paid,534,918
+CLM-0099-02,P0099,2024-02-13,Specialist Visit,Outpatient,Type 2 Diabetes,Paid,575,955
+CLM-0099-03,P0099,2024-03-19,Emergency Department,Hospital,Type 2 Diabetes,Paid,616,992
+CLM-0099-04,P0099,2024-04-23,Outpatient Lab,Outpatient,Type 2 Diabetes,Paid,657,1029
+CLM-0100-01,P0100,2024-01-10,Specialist Visit,Outpatient,COPD,Paid,607,979
+CLM-0100-02,P0100,2024-02-14,Emergency Department,Hospital,COPD,Paid,648,1016
